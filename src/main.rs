@@ -23,23 +23,13 @@ async fn main() {
 
     // Get all A-records from cloudflare
     let zones = list_zones(config.cf_api_key).await;
-
     println!("{:?}", zones);
 
-    // store domains in db
-    // store in file temporary
-    // NOTE: should set up directory /opt/dns_updater and store data (sqlite3 or flat file)
-    println!("store data before continuing");
-
-    //fs::create_dir_all("/opt/dns_updater").expect("failed to create dns_updater folder");
-    // let data_file = fs::File::create_new("/opt/dns_updater/").expect("path already exists");
-
-    // Store records in database
+    // Store records
     // Sleep for N seconds
     // Get public IP address
     // Get active records from DB
     // Update record in CF if not same as public IP
-    //
 
     println!("FINISHED");
 }
