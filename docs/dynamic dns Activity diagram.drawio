@@ -1,22 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2024-04-23T14:40:59.287Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="4mz99_1vSmlPnd6dn8I2" version="24.2.8" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-28T18:41:09.423Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="uBKzr_ik8TrhB5bdbcIr" version="24.2.8" type="device">
   <diagram name="Page-1" id="u9x7cbwEqf4fW1vc4oGE">
-    <mxGraphModel dx="763" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2862" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="FKVEsAyCelO6aKan118--6" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
-          <mxGeometry x="100" y="180" width="30" height="30" as="geometry" />
+          <mxGeometry x="100" y="120" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="FKVEsAyCelO6aKan118--7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="FKVEsAyCelO6aKan118--6" parent="1" target="FKVEsAyCelO6aKan118--8">
+        <mxCell id="FKVEsAyCelO6aKan118--7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="FKVEsAyCelO6aKan118--6" parent="1" target="FKVEsAyCelO6aKan118--61">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="115" y="270" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="FKVEsAyCelO6aKan118--10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--8" target="FKVEsAyCelO6aKan118--9">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="FKVEsAyCelO6aKan118--8" value="Read config and store domains in db" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="55" y="250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--9" target="FKVEsAyCelO6aKan118--11">
           <mxGeometry relative="1" as="geometry" />
@@ -27,14 +21,8 @@
         <mxCell id="FKVEsAyCelO6aKan118--55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--11" target="FKVEsAyCelO6aKan118--54">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FKVEsAyCelO6aKan118--11" value="store a records in database" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="FKVEsAyCelO6aKan118--11" value="Update/insert A-records in database" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="55" y="470" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="FKVEsAyCelO6aKan118--14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--13" target="FKVEsAyCelO6aKan118--8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="FKVEsAyCelO6aKan118--13" value="config has domains that should be activated" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
-          <mxGeometry x="270" y="200" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--15" value="Loop" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="30" y="670" width="730" height="380" as="geometry" />
@@ -43,13 +31,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--17" value="get public IP address" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="55" y="780" width="120" height="60" as="geometry" />
+          <mxGeometry x="55" y="740" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--19" target="FKVEsAyCelO6aKan118--28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--19" value="Get active records from db" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="230" y="780" width="120" height="60" as="geometry" />
+          <mxGeometry x="230" y="740" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;jumpStyle=arc;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--21" target="FKVEsAyCelO6aKan118--19">
           <mxGeometry relative="1" as="geometry" />
@@ -63,7 +51,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--28" value="Are there more records?" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="390" y="780" width="120" height="60" as="geometry" />
+          <mxGeometry x="390" y="740" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--30" target="FKVEsAyCelO6aKan118--32">
           <mxGeometry relative="1" as="geometry" />
@@ -86,7 +74,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--30" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="560" y="770" width="80" height="80" as="geometry" />
+          <mxGeometry x="560" y="730" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--32" target="FKVEsAyCelO6aKan118--35">
           <mxGeometry relative="1" as="geometry" />
@@ -120,7 +108,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--45" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="295" y="880" width="130" height="10" as="geometry" />
+          <mxGeometry x="295" y="860" width="130" height="10" as="geometry" />
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.708;entryY=1.3;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--35" target="FKVEsAyCelO6aKan118--45">
           <mxGeometry relative="1" as="geometry" />
@@ -135,6 +123,24 @@
         </mxCell>
         <mxCell id="FKVEsAyCelO6aKan118--54" value="sleep for &lt;i&gt;n &lt;/i&gt;seconds&lt;i&gt; &lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="55" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FKVEsAyCelO6aKan118--60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--59" target="FKVEsAyCelO6aKan118--11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FKVEsAyCelO6aKan118--59" value="All records/domain are set de inactive by default. Getting IP&#39;s updated is opt-in (set to active)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="330" width="130" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FKVEsAyCelO6aKan118--62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--61" target="FKVEsAyCelO6aKan118--9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FKVEsAyCelO6aKan118--61" value="read config" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="55" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FKVEsAyCelO6aKan118--65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="FKVEsAyCelO6aKan118--64" target="FKVEsAyCelO6aKan118--61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FKVEsAyCelO6aKan118--64" value="Config has zone id&#39;s and api-keys for Cloudflare" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="250" y="197.5" width="120" height="105" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
