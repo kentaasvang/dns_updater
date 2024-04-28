@@ -1,43 +1,32 @@
-#![allow(dead_code, unused_imports)]
-
 use serde::Deserialize;
-use std::error::Error;
+use serde_json::*;
+use std::{fs, io::Read};
 
-#[derive(Debug, Deserialize)]
-struct Domain {
-    name: String,
-    active: bool
+#[derive(Deserialize, Debug)]
+struct Settings {
+    cf_api_key: String,
 }
 
-#[derive(Debug)]
-struct Config {
-    domains: Vec<Domain>
-}
+fn get_settings(path: String) -> Settings {
+    let content = fs::read_to_string(path).expect("settings file not found");
 
-
-fn read_config(config_path: String) -> Config {
-    let mut domains: Vec<Domain> = Vec::new();
-
-    let mut rdr = csv::Reader::from_path(config_path)
-       .expect("no file found");
-
-    for result in rdr.deserialize() {
-        let domain: Domain = result.expect("No config found.");
-        domains.push(domain)
-    }
-    
-    let config = Config { domains };
-    config
+    let settings: Settings = serde_json::from_str(&content).expect("Couldn't deserialize settings file");
+    settings
 }
 
 fn main() {
-
-    // Read config 
-    let config_path = String::from("config.csv");
-    let config = read_config(config_path);
+    // Read config
+    let config_path = String::from("settings.json");
+    let config = get_settings(config_path);
     println!("{:?}", config);
-   
+
     // store domains in db
+    // store in file temporary
+    // NOTE: should set up directory /opt/dns_updater and store data (sqlite3 or flat file)
+    println!("store data before continuing");
+
+    //fs::create_dir_all("/opt/dns_updater").expect("failed to create dns_updater folder");
+    // let data_file = fs::File::create_new("/opt/dns_updater/").expect("path already exists");
 
     // Get all A-records from cloudflare
     // Store records in database
@@ -46,6 +35,6 @@ fn main() {
     // Get active records from DB
     // Update record in CF if not same as public IP
     //
-    
+
     println!("FINISHED");
 }
